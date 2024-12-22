@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Calculator & Qiblah Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Prayer Calculator & Qiblah Finder</h1>
+        <p>Enter a location to calculate prayer times and find the Qiblah direction:</p>
+        <input type="text" id="location" placeholder="Enter city or address">
+        <button onclick="getPrayerTimes()">Get Prayer Times</button>
+        <div id="results"></div>
+        <canvas id="qiblahCompass" width="300" height="300"></canvas>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
