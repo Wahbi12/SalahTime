@@ -14,7 +14,7 @@ async function getPrayerTimes() {
         const encodedLocation = encodeURIComponent(location);
 
         // Fetch prayer times from the Aladhan API
-        const response = await fetch(`https://www.islamicfinder.us/index.php/api/prayer_times);
+        const response = await fetch(`https://api.aladhan.com/v1/timingsByCity?city=${encodedLocation}&method=2`);
         
         // Check if the response is okay
         if (!response.ok) {
